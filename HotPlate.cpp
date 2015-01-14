@@ -70,7 +70,7 @@ int main()
 
 				//new temperature
 					//Skip fixed points
-				if (i == 400 && j < 331 || (i == 200 && j == 500))
+				if ((i == 400 && j < 331) || (i == 200 && j == 500))
 				{
 				}
 				else
