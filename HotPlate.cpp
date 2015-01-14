@@ -1,5 +1,5 @@
 #include <vector>
-#include <iostream>
+//#include <iostream>
 #include <chrono>
 #include <fstream>
 
@@ -8,37 +8,49 @@ using std::vector;
 int main()
 {
 	std::ofstream file_out("hotPlateFinished.txt", std::ofstream::out);
-	const float PLATE_SIZE = 550;
-	const float NEUTRAL_TEMP = 50;
+	std::ofstream png_out("hotPlateFinished.png", std::ofstream::out);
+	png_out << "137 80 78 71 13 10 26 10 ";
+	const double PLATE_SIZE = 550;
+	const double NEUTRAL_TEMP = 50;
 	//vectors one initialized to having all 50's
-	//vector<vector<float>> previous_plate (PLATE_SIZE, vector<float>(PLATE_SIZE, NEUTRAL_TEMP));
-	vector<vector<float>> previous_plate;
-	vector<vector<float>> current_plate;
+	//vector<vector<double>> previous_plate (PLATE_SIZE, vector<double>(PLATE_SIZE, NEUTRAL_TEMP));
+	vector<vector<double>> previous_plate;
+	vector<vector<double>> current_plate;
 
 	//auto initalize_start_time = std::chrono::high_resolution_clock::now();
 	//initialize vector to have correct starting temperatures
 	//Make them all have 50
 	for (int i = 0; i < PLATE_SIZE; ++i)
 	{
-		vector<float> tmp;
+		vector<double> tmp;
 		previous_plate.push_back(tmp);
 		for (int j = 0; j < PLATE_SIZE; ++j)
 		{
 			previous_plate[i].push_back(NEUTRAL_TEMP);
 		}
 	}
-		//bottom row
+		//bottom row get's 100 degrees
 	for (int i = 0; i < PLATE_SIZE; ++i)
 	{
 		previous_plate[PLATE_SIZE-1][i] = 100;
 	}
-		//mid section
+		//mid section (400,0-330) gets 100 degrees
 	for (int i = 0; i < 331; ++i)
 	{
 		previous_plate[400][i] = 100;
 	}
-		//single point
+		//single point gets 100 degrees
 	previous_plate[200][500] = 100;
+		//Top & side bars get 0 degrees
+	for (int i = 0; i < PLATE_SIZE; ++i)
+	{
+		previous_plate[0][i] = 0; //top bar
+		previous_plate[i][0] = 0; //left bar
+		previous_plate[i][PLATE_SIZE-1] = 0; //right bar
+	}
+
+
+	//Set current_plate to also have the same setup
 	current_plate = previous_plate;
 
 	//auto initalize_end_time = std::chrono::high_resolution_clock::now();
@@ -61,20 +73,24 @@ int main()
 		{
 			for (int j = 1; j < PLATE_SIZE - 1; ++j)
 			{
-					//Debug purposes
-					//float new_val = (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
-					//	previous_plate[i][j + 1] + previous_plate[i][j - 1] + 4 * previous_plate[i][j]) / 8;
-					//current_plate[i][j] = new_val;
-
-					//file_out << new_val << " ";
-
 				//new temperature
 					//Skip fixed points
 				if ((i == 400 && j < 331) || (i == 200 && j == 500))
 				{
+					//file_out << previous_plate[i][j] << " ";
+					//png_out << (int)previous_plate[i][j] << " ";
 				}
 				else
 				{
+					//Debug purposes
+					//double new_val = (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
+					//	previous_plate[i][j + 1] + previous_plate[i][j - 1] + 4 * previous_plate[i][j]) / 8;
+					//current_plate[i][j] = new_val;
+
+					//file_out << new_val << " ";
+					//png_out << (int)new_val << " ";
+
+
 					current_plate[i][j] = (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
 						previous_plate[i][j + 1] + previous_plate[i][j - 1] + 4 * previous_plate[i][j]) / 8;
 					//steady state check
@@ -93,6 +109,7 @@ int main()
 		previous_plate = current_plate;
 		++cycles;
 		//file_out << "\n"; //debug
+		file_out << "\n Cycle: " << cycles << " Converged: " << converged << "\n";
 
 	} while (converged > 0);
 

@@ -1,3 +1,74 @@
-Initialize time: 0.271192 seconds
-Total running time: 94.6305 seconds
-Iterations: 242
+
+ Cycle: 1Converged: 2846
+
+ Cycle: 2Converged: 5686
+
+ Cycle: 3Converged: 5686
+
+ Cycle: 4Converged: 5686
+
+ Cycle: 5Converged: 5692
+
+ Cycle: 6Converged: 5700
+
+ Cycle: 7Converged: 8493
+
+ Cycle: 8Converged: 8489
+
+ Cycle: 9Converged: 8489
+
+ Cycle: 10Converged: 8483
+
+ Cycle: 11Converged: 8470
+
+ Cycle: 12Converged: 8460
+
+ Cycle: 13Converged: 8459
+
+ Cycle: 14Converged: 8457
+
+ Cycle: 15Converged: 8437
+
+ Cycle: 16Converged: 8415
+
+ Cycle: 17Converged: 8403
+
+ Cycle: 18Converged: 5626
+
+ Cycle: 19Converged: 5606
+
+ Cycle: 20Converged: 5598
+
+ Cycle: 21Converged: 5584
+
+ Cycle: 22Converged: 5564
+
+ Cycle: 23Converged: 2807
+
+ Cycle: 24Converged: 46
+
+ Cycle: 25Converged: 38
+
+ Cycle: 26Converged: 32
+
+ Cycle: 27Converged: 32
+
+ Cycle: 28Converged: 32
+
+ Cycle: 29Converged: 24
+
+ Cycle: 30Converged: 16
+
+ Cycle: 31Converged: 12
+
+ Cycle: 32Converged: 12
+
+ Cycle: 33Converged: 8
+
+ Cycle: 34Converged: 6
+
+ Cycle: 35Converged: 2
+
+ Cycle: 36Converged: 0
+Total running time: 0.13049 seconds
+Iterations: 36
