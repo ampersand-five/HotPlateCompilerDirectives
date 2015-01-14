@@ -24,7 +24,7 @@ int main()
 		previous_plate.push_back(tmp);
 		for (int j = 0; j < PLATE_SIZE; ++j)
 		{
-			previous_plate[i].push_back(50);
+			previous_plate[i].push_back(NEUTRAL_TEMP);
 		}
 	}
 		//bottom row
