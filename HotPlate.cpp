@@ -8,14 +8,14 @@ using std::vector;
 int main()
 {
 	std::ofstream file_out("hotPlateFinished.txt", std::ofstream::out);
-	const float PLATE_SIZE = 1024;
+	const float PLATE_SIZE = 4096;
 	const float NEUTRAL_TEMP = 50;
 	//vectors one initialized to having all 50's
 	//vector<vector<float>> previous_plate (PLATE_SIZE, vector<float>(PLATE_SIZE, NEUTRAL_TEMP));
 	vector<vector<float>> previous_plate;
 	vector<vector<float>> current_plate;
 
-
+	auto initalize_start_time = std::chrono::high_resolution_clock::now();
 	//initialize vector to have correct starting temperatures
 	//Make them all have 50
 	for (int i = 0; i < PLATE_SIZE; ++i)
@@ -41,6 +41,10 @@ int main()
 	previous_plate[200][500] = 100;
 	current_plate = previous_plate;
 
+	auto initalize_end_time = std::chrono::high_resolution_clock::now();
+
+	auto init_time = std::chrono::duration_cast<std::chrono::duration<double>>(initalize_end_time - initalize_start_time);
+	file_out << "Initialize time: " << init_time.count() << " seconds\n";
 
 	//Start iterating
 		//Start time
@@ -53,29 +57,44 @@ int main()
 	{
 		converged = 0;
 		//Determine new plate
-		for (int i = 1; i < PLATE_SIZE; ++i)
+		for (int i = 1; i < PLATE_SIZE - 1; ++i)
 		{
-			for (int j = 1; j < PLATE_SIZE; ++j)
+			for (int j = 1; j < PLATE_SIZE - 1; ++j)
 			{
+					//Debug purposes
+					//float new_val = (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
+					//	previous_plate[i][j + 1] + previous_plate[i][j - 1] + 4 * previous_plate[i][j]) / 8;
+					//current_plate[i][j] = new_val;
+
+					//file_out << new_val << " ";
+
 				//new temperature
-				current_plate[i][j] = (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
-					previous_plate[i][j + 1] + previous_plate[i][j - 1] + 4 * previous_plate[i][j]) / 8;
-				//steady state check
-				if (abs(previous_plate[i][j] - (previous_plate[i + 1][j] + previous_plate[i-1][j] + 
-												previous_plate[i][j+1] + previous_plate[i][j-1]) / 4) > 0.1)
+					//Skip fixed points
+				if (i == 400 && j < 331 || (i == 200 && j == 500))
 				{
-					++converged;
 				}
+				else
+				{
+					current_plate[i][j] = (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
+						previous_plate[i][j + 1] + previous_plate[i][j - 1] + 4 * previous_plate[i][j]) / 8;
+					//steady state check
+					if (abs(previous_plate[i][j] - (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
+						previous_plate[i][j + 1] + previous_plate[i][j - 1]) / 4) > 0.1)
+					{
+						++converged;
+					}
+				}
+
 			}
+			//file_out << "\n"; //debug
 		}
 
 		//Swap
 		previous_plate = current_plate;
+		++cycles;
+		//file_out << "\n"; //debug
 
 	} while (converged > 0);
-
-
-
 
 
 	//End time
