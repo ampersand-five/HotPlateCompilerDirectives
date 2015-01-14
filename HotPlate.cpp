@@ -8,14 +8,14 @@ using std::vector;
 int main()
 {
 	std::ofstream file_out("hotPlateFinished.txt", std::ofstream::out);
-	const float PLATE_SIZE = 4096;
+	const float PLATE_SIZE = 550;
 	const float NEUTRAL_TEMP = 50;
 	//vectors one initialized to having all 50's
 	//vector<vector<float>> previous_plate (PLATE_SIZE, vector<float>(PLATE_SIZE, NEUTRAL_TEMP));
 	vector<vector<float>> previous_plate;
 	vector<vector<float>> current_plate;
 
-	auto initalize_start_time = std::chrono::high_resolution_clock::now();
+	//auto initalize_start_time = std::chrono::high_resolution_clock::now();
 	//initialize vector to have correct starting temperatures
 	//Make them all have 50
 	for (int i = 0; i < PLATE_SIZE; ++i)
@@ -41,10 +41,10 @@ int main()
 	previous_plate[200][500] = 100;
 	current_plate = previous_plate;
 
-	auto initalize_end_time = std::chrono::high_resolution_clock::now();
+	//auto initalize_end_time = std::chrono::high_resolution_clock::now();
 
-	auto init_time = std::chrono::duration_cast<std::chrono::duration<double>>(initalize_end_time - initalize_start_time);
-	file_out << "Initialize time: " << init_time.count() << " seconds\n";
+	//auto init_time = std::chrono::duration_cast<std::chrono::duration<double>>(initalize_end_time - initalize_start_time);
+	//file_out << "Initialize time: " << init_time.count() << " seconds\n";
 
 	//Start iterating
 		//Start time
