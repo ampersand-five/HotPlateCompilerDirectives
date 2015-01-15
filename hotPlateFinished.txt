@@ -1,485 +1,485 @@
 
- Cycle: 1 Converged: 2846
+ Cycle: 1 Converged: 4742
 
- Cycle: 2 Converged: 5686
+ Cycle: 2 Converged: 9478
 
- Cycle: 3 Converged: 8520
+ Cycle: 3 Converged: 14208
 
- Cycle: 4 Converged: 8526
+ Cycle: 4 Converged: 14214
 
- Cycle: 5 Converged: 8540
+ Cycle: 5 Converged: 14228
 
- Cycle: 6 Converged: 11343
+ Cycle: 6 Converged: 18927
 
- Cycle: 7 Converged: 11355
+ Cycle: 7 Converged: 18939
 
- Cycle: 8 Converged: 11362
+ Cycle: 8 Converged: 18946
 
- Cycle: 9 Converged: 11374
+ Cycle: 9 Converged: 18958
 
- Cycle: 10 Converged: 11382
+ Cycle: 10 Converged: 18966
 
- Cycle: 11 Converged: 14171
+ Cycle: 11 Converged: 23651
 
- Cycle: 12 Converged: 14175
+ Cycle: 12 Converged: 23655
 
- Cycle: 13 Converged: 14183
+ Cycle: 13 Converged: 23663
 
- Cycle: 14 Converged: 14185
+ Cycle: 14 Converged: 23665
 
- Cycle: 15 Converged: 14187
+ Cycle: 15 Converged: 23667
 
- Cycle: 16 Converged: 14191
+ Cycle: 16 Converged: 23671
 
- Cycle: 17 Converged: 16949
+ Cycle: 17 Converged: 28325
 
- Cycle: 18 Converged: 16965
+ Cycle: 18 Converged: 28341
 
- Cycle: 19 Converged: 16977
+ Cycle: 19 Converged: 28353
 
- Cycle: 20 Converged: 16987
+ Cycle: 20 Converged: 28363
 
- Cycle: 21 Converged: 16989
+ Cycle: 21 Converged: 28365
 
- Cycle: 22 Converged: 16989
+ Cycle: 22 Converged: 28365
 
- Cycle: 23 Converged: 16991
+ Cycle: 23 Converged: 28367
 
- Cycle: 24 Converged: 16995
+ Cycle: 24 Converged: 28371
 
- Cycle: 25 Converged: 17001
+ Cycle: 25 Converged: 28377
 
- Cycle: 26 Converged: 17021
+ Cycle: 26 Converged: 28397
 
- Cycle: 27 Converged: 19750
+ Cycle: 27 Converged: 33022
 
- Cycle: 28 Converged: 19752
+ Cycle: 28 Converged: 33024
 
- Cycle: 29 Converged: 19762
+ Cycle: 29 Converged: 33034
 
- Cycle: 30 Converged: 19762
+ Cycle: 30 Converged: 33034
 
- Cycle: 31 Converged: 19760
+ Cycle: 31 Converged: 33032
 
- Cycle: 32 Converged: 19752
+ Cycle: 32 Converged: 33024
 
- Cycle: 33 Converged: 19756
+ Cycle: 33 Converged: 33028
 
- Cycle: 34 Converged: 19758
+ Cycle: 34 Converged: 33030
 
- Cycle: 35 Converged: 19758
+ Cycle: 35 Converged: 33030
 
- Cycle: 36 Converged: 19766
+ Cycle: 36 Converged: 33038
 
- Cycle: 37 Converged: 19767
+ Cycle: 37 Converged: 33039
 
- Cycle: 38 Converged: 19771
+ Cycle: 38 Converged: 33043
 
- Cycle: 39 Converged: 19781
+ Cycle: 39 Converged: 33053
 
- Cycle: 40 Converged: 22476
+ Cycle: 40 Converged: 37644
 
- Cycle: 41 Converged: 22482
+ Cycle: 41 Converged: 37650
 
- Cycle: 42 Converged: 22482
+ Cycle: 42 Converged: 37650
 
- Cycle: 43 Converged: 22484
+ Cycle: 43 Converged: 37652
 
- Cycle: 44 Converged: 22486
+ Cycle: 44 Converged: 37654
 
- Cycle: 45 Converged: 22488
+ Cycle: 45 Converged: 37656
 
- Cycle: 46 Converged: 22494
+ Cycle: 46 Converged: 37662
 
- Cycle: 47 Converged: 22486
+ Cycle: 47 Converged: 37654
 
- Cycle: 48 Converged: 22478
+ Cycle: 48 Converged: 37646
 
- Cycle: 49 Converged: 22470
+ Cycle: 49 Converged: 37638
 
- Cycle: 50 Converged: 22472
+ Cycle: 50 Converged: 37640
 
- Cycle: 51 Converged: 22468
+ Cycle: 51 Converged: 37636
 
- Cycle: 52 Converged: 22468
+ Cycle: 52 Converged: 37636
 
- Cycle: 53 Converged: 22460
+ Cycle: 53 Converged: 37628
 
- Cycle: 54 Converged: 22472
+ Cycle: 54 Converged: 37640
 
- Cycle: 55 Converged: 22476
+ Cycle: 55 Converged: 37644
 
- Cycle: 56 Converged: 22472
+ Cycle: 56 Converged: 37640
 
- Cycle: 57 Converged: 22476
+ Cycle: 57 Converged: 37644
 
- Cycle: 58 Converged: 22484
+ Cycle: 58 Converged: 37652
 
- Cycle: 59 Converged: 25137
+ Cycle: 59 Converged: 42201
 
- Cycle: 60 Converged: 25137
+ Cycle: 60 Converged: 42201
 
- Cycle: 61 Converged: 25137
+ Cycle: 61 Converged: 42201
 
- Cycle: 62 Converged: 25135
+ Cycle: 62 Converged: 42199
 
- Cycle: 63 Converged: 25135
+ Cycle: 63 Converged: 42199
 
- Cycle: 64 Converged: 25145
+ Cycle: 64 Converged: 42209
 
- Cycle: 65 Converged: 25145
+ Cycle: 65 Converged: 42209
 
- Cycle: 66 Converged: 25137
+ Cycle: 66 Converged: 42201
 
- Cycle: 67 Converged: 25137
+ Cycle: 67 Converged: 42201
 
- Cycle: 68 Converged: 25125
+ Cycle: 68 Converged: 42189
 
- Cycle: 69 Converged: 25127
+ Cycle: 69 Converged: 42191
 
- Cycle: 70 Converged: 25111
+ Cycle: 70 Converged: 42175
 
- Cycle: 71 Converged: 25103
+ Cycle: 71 Converged: 42167
 
- Cycle: 72 Converged: 25095
+ Cycle: 72 Converged: 42159
 
- Cycle: 73 Converged: 25097
+ Cycle: 73 Converged: 42161
 
- Cycle: 74 Converged: 25101
+ Cycle: 74 Converged: 42165
 
- Cycle: 75 Converged: 25093
+ Cycle: 75 Converged: 42157
 
- Cycle: 76 Converged: 25085
+ Cycle: 76 Converged: 42149
 
- Cycle: 77 Converged: 25085
+ Cycle: 77 Converged: 42149
 
- Cycle: 78 Converged: 25065
+ Cycle: 78 Converged: 42129
 
- Cycle: 79 Converged: 25061
+ Cycle: 79 Converged: 42125
 
- Cycle: 80 Converged: 25041
+ Cycle: 80 Converged: 42105
 
- Cycle: 81 Converged: 25027
+ Cycle: 81 Converged: 42091
 
- Cycle: 82 Converged: 25013
+ Cycle: 82 Converged: 42077
 
- Cycle: 83 Converged: 25003
+ Cycle: 83 Converged: 42067
 
- Cycle: 84 Converged: 24983
+ Cycle: 84 Converged: 42047
 
- Cycle: 85 Converged: 22338
+ Cycle: 85 Converged: 37506
 
- Cycle: 86 Converged: 22330
+ Cycle: 86 Converged: 37498
 
- Cycle: 87 Converged: 22322
+ Cycle: 87 Converged: 37490
 
- Cycle: 88 Converged: 22306
+ Cycle: 88 Converged: 37474
 
- Cycle: 89 Converged: 24891
+ Cycle: 89 Converged: 41955
 
- Cycle: 90 Converged: 24901
+ Cycle: 90 Converged: 41965
 
- Cycle: 91 Converged: 24895
+ Cycle: 91 Converged: 41959
 
- Cycle: 92 Converged: 24887
+ Cycle: 92 Converged: 41951
 
- Cycle: 93 Converged: 24894
+ Cycle: 93 Converged: 41958
 
- Cycle: 94 Converged: 24890
+ Cycle: 94 Converged: 41954
 
- Cycle: 95 Converged: 24866
+ Cycle: 95 Converged: 41930
 
- Cycle: 96 Converged: 24864
+ Cycle: 96 Converged: 41928
 
- Cycle: 97 Converged: 24844
+ Cycle: 97 Converged: 41908
 
- Cycle: 98 Converged: 24844
+ Cycle: 98 Converged: 41908
 
- Cycle: 99 Converged: 24828
+ Cycle: 99 Converged: 41892
 
- Cycle: 100 Converged: 24832
+ Cycle: 100 Converged: 41896
 
- Cycle: 101 Converged: 24838
+ Cycle: 101 Converged: 41902
 
- Cycle: 102 Converged: 24828
+ Cycle: 102 Converged: 41892
 
- Cycle: 103 Converged: 24820
+ Cycle: 103 Converged: 41884
 
- Cycle: 104 Converged: 24804
+ Cycle: 104 Converged: 41868
 
- Cycle: 105 Converged: 24803
+ Cycle: 105 Converged: 41867
 
- Cycle: 106 Converged: 24803
+ Cycle: 106 Converged: 41867
 
- Cycle: 107 Converged: 24793
+ Cycle: 107 Converged: 41857
 
- Cycle: 108 Converged: 24793
+ Cycle: 108 Converged: 41857
 
- Cycle: 109 Converged: 24793
+ Cycle: 109 Converged: 41857
 
- Cycle: 110 Converged: 24785
+ Cycle: 110 Converged: 41849
 
- Cycle: 111 Converged: 24785
+ Cycle: 111 Converged: 41849
 
- Cycle: 112 Converged: 24783
+ Cycle: 112 Converged: 41847
 
- Cycle: 113 Converged: 24785
+ Cycle: 113 Converged: 41849
 
- Cycle: 114 Converged: 24769
+ Cycle: 114 Converged: 41833
 
- Cycle: 115 Converged: 24747
+ Cycle: 115 Converged: 41811
 
- Cycle: 116 Converged: 24747
+ Cycle: 116 Converged: 41811
 
- Cycle: 117 Converged: 24745
+ Cycle: 117 Converged: 41809
 
- Cycle: 118 Converged: 24747
+ Cycle: 118 Converged: 41811
 
- Cycle: 119 Converged: 24729
+ Cycle: 119 Converged: 41793
 
- Cycle: 120 Converged: 24727
+ Cycle: 120 Converged: 41791
 
- Cycle: 121 Converged: 24723
+ Cycle: 121 Converged: 41787
 
- Cycle: 122 Converged: 24713
+ Cycle: 122 Converged: 41777
 
- Cycle: 123 Converged: 24703
+ Cycle: 123 Converged: 41767
 
- Cycle: 124 Converged: 24706
+ Cycle: 124 Converged: 41770
 
- Cycle: 125 Converged: 24696
+ Cycle: 125 Converged: 41760
 
- Cycle: 126 Converged: 24684
+ Cycle: 126 Converged: 41748
 
- Cycle: 127 Converged: 24656
+ Cycle: 127 Converged: 41720
 
- Cycle: 128 Converged: 24636
+ Cycle: 128 Converged: 41700
 
- Cycle: 129 Converged: 24619
+ Cycle: 129 Converged: 41683
 
- Cycle: 130 Converged: 24607
+ Cycle: 130 Converged: 41671
 
- Cycle: 131 Converged: 24565
+ Cycle: 131 Converged: 41629
 
- Cycle: 132 Converged: 21998
+ Cycle: 132 Converged: 37166
 
- Cycle: 133 Converged: 21988
+ Cycle: 133 Converged: 37156
 
- Cycle: 134 Converged: 21982
+ Cycle: 134 Converged: 37150
 
- Cycle: 135 Converged: 21978
+ Cycle: 135 Converged: 37146
 
- Cycle: 136 Converged: 21974
+ Cycle: 136 Converged: 37142
 
- Cycle: 137 Converged: 21965
+ Cycle: 137 Converged: 37133
 
- Cycle: 138 Converged: 21944
+ Cycle: 138 Converged: 37112
 
- Cycle: 139 Converged: 21940
+ Cycle: 139 Converged: 37108
 
- Cycle: 140 Converged: 21934
+ Cycle: 140 Converged: 37102
 
- Cycle: 141 Converged: 21918
+ Cycle: 141 Converged: 37086
 
- Cycle: 142 Converged: 21910
+ Cycle: 142 Converged: 37078
 
- Cycle: 143 Converged: 21908
+ Cycle: 143 Converged: 37076
 
- Cycle: 144 Converged: 21894
+ Cycle: 144 Converged: 37062
 
- Cycle: 145 Converged: 21886
+ Cycle: 145 Converged: 37054
 
- Cycle: 146 Converged: 21882
+ Cycle: 146 Converged: 37050
 
- Cycle: 147 Converged: 21860
+ Cycle: 147 Converged: 37028
 
- Cycle: 148 Converged: 21850
+ Cycle: 148 Converged: 37018
 
- Cycle: 149 Converged: 21842
+ Cycle: 149 Converged: 37010
 
- Cycle: 150 Converged: 21840
+ Cycle: 150 Converged: 37008
 
- Cycle: 151 Converged: 21832
+ Cycle: 151 Converged: 37000
 
- Cycle: 152 Converged: 21812
+ Cycle: 152 Converged: 36980
 
- Cycle: 153 Converged: 21802
+ Cycle: 153 Converged: 36970
 
- Cycle: 154 Converged: 21798
+ Cycle: 154 Converged: 36966
 
- Cycle: 155 Converged: 21778
+ Cycle: 155 Converged: 36946
 
- Cycle: 156 Converged: 21760
+ Cycle: 156 Converged: 36928
 
- Cycle: 157 Converged: 21764
+ Cycle: 157 Converged: 36932
 
- Cycle: 158 Converged: 21758
+ Cycle: 158 Converged: 36926
 
- Cycle: 159 Converged: 21744
+ Cycle: 159 Converged: 36912
 
- Cycle: 160 Converged: 21734
+ Cycle: 160 Converged: 36902
 
- Cycle: 161 Converged: 21722
+ Cycle: 161 Converged: 36890
 
- Cycle: 162 Converged: 21718
+ Cycle: 162 Converged: 36886
 
- Cycle: 163 Converged: 21690
+ Cycle: 163 Converged: 36858
 
- Cycle: 164 Converged: 21660
+ Cycle: 164 Converged: 36828
 
- Cycle: 165 Converged: 21648
+ Cycle: 165 Converged: 36816
 
- Cycle: 166 Converged: 21624
+ Cycle: 166 Converged: 36792
 
- Cycle: 167 Converged: 19079
+ Cycle: 167 Converged: 32351
 
- Cycle: 168 Converged: 19071
+ Cycle: 168 Converged: 32343
 
- Cycle: 169 Converged: 19059
+ Cycle: 169 Converged: 32331
 
- Cycle: 170 Converged: 19043
+ Cycle: 170 Converged: 32315
 
- Cycle: 171 Converged: 19031
+ Cycle: 171 Converged: 32303
 
- Cycle: 172 Converged: 19017
+ Cycle: 172 Converged: 32289
 
- Cycle: 173 Converged: 19015
+ Cycle: 173 Converged: 32287
 
- Cycle: 174 Converged: 19005
+ Cycle: 174 Converged: 32277
 
- Cycle: 175 Converged: 18983
+ Cycle: 175 Converged: 32255
 
- Cycle: 176 Converged: 18971
+ Cycle: 176 Converged: 32243
 
- Cycle: 177 Converged: 18969
+ Cycle: 177 Converged: 32241
 
- Cycle: 178 Converged: 18969
+ Cycle: 178 Converged: 32241
 
- Cycle: 179 Converged: 18963
+ Cycle: 179 Converged: 32235
 
- Cycle: 180 Converged: 18945
+ Cycle: 180 Converged: 32217
 
- Cycle: 181 Converged: 18945
+ Cycle: 181 Converged: 32217
 
- Cycle: 182 Converged: 18935
+ Cycle: 182 Converged: 32207
 
- Cycle: 183 Converged: 18909
+ Cycle: 183 Converged: 32181
 
- Cycle: 184 Converged: 18907
+ Cycle: 184 Converged: 32179
 
- Cycle: 185 Converged: 18889
+ Cycle: 185 Converged: 32161
 
- Cycle: 186 Converged: 18869
+ Cycle: 186 Converged: 32141
 
- Cycle: 187 Converged: 18853
+ Cycle: 187 Converged: 32125
 
- Cycle: 188 Converged: 18853
+ Cycle: 188 Converged: 32125
 
- Cycle: 189 Converged: 18839
+ Cycle: 189 Converged: 32111
 
- Cycle: 190 Converged: 18835
+ Cycle: 190 Converged: 32107
 
- Cycle: 191 Converged: 18821
+ Cycle: 191 Converged: 32093
 
- Cycle: 192 Converged: 18791
+ Cycle: 192 Converged: 32063
 
- Cycle: 193 Converged: 18743
+ Cycle: 193 Converged: 32015
 
- Cycle: 194 Converged: 18709
+ Cycle: 194 Converged: 31981
 
- Cycle: 195 Converged: 16202
+ Cycle: 195 Converged: 27578
 
- Cycle: 196 Converged: 16184
+ Cycle: 196 Converged: 27560
 
- Cycle: 197 Converged: 16174
+ Cycle: 197 Converged: 27550
 
- Cycle: 198 Converged: 16148
+ Cycle: 198 Converged: 27524
 
- Cycle: 199 Converged: 16136
+ Cycle: 199 Converged: 27512
 
- Cycle: 200 Converged: 16124
+ Cycle: 200 Converged: 27500
 
- Cycle: 201 Converged: 16110
+ Cycle: 201 Converged: 27486
 
- Cycle: 202 Converged: 16094
+ Cycle: 202 Converged: 27470
 
- Cycle: 203 Converged: 16074
+ Cycle: 203 Converged: 27450
 
- Cycle: 204 Converged: 16072
+ Cycle: 204 Converged: 27448
 
- Cycle: 205 Converged: 16062
+ Cycle: 205 Converged: 27438
 
- Cycle: 206 Converged: 16044
+ Cycle: 206 Converged: 27420
 
- Cycle: 207 Converged: 16030
+ Cycle: 207 Converged: 27406
 
- Cycle: 208 Converged: 16024
+ Cycle: 208 Converged: 27400
 
- Cycle: 209 Converged: 15994
+ Cycle: 209 Converged: 27370
 
- Cycle: 210 Converged: 15988
+ Cycle: 210 Converged: 27364
 
- Cycle: 211 Converged: 15960
+ Cycle: 211 Converged: 27336
 
- Cycle: 212 Converged: 15928
+ Cycle: 212 Converged: 27304
 
- Cycle: 213 Converged: 15898
+ Cycle: 213 Converged: 27274
 
- Cycle: 214 Converged: 15818
+ Cycle: 214 Converged: 27194
 
- Cycle: 215 Converged: 13377
+ Cycle: 215 Converged: 22857
 
- Cycle: 216 Converged: 10872
+ Cycle: 216 Converged: 18456
 
- Cycle: 217 Converged: 10848
+ Cycle: 217 Converged: 18432
 
- Cycle: 218 Converged: 10838
+ Cycle: 218 Converged: 18422
 
- Cycle: 219 Converged: 10824
+ Cycle: 219 Converged: 18408
 
- Cycle: 220 Converged: 10798
+ Cycle: 220 Converged: 18382
 
- Cycle: 221 Converged: 10770
+ Cycle: 221 Converged: 18354
 
- Cycle: 222 Converged: 10770
+ Cycle: 222 Converged: 18354
 
- Cycle: 223 Converged: 10762
+ Cycle: 223 Converged: 18346
 
- Cycle: 224 Converged: 10740
+ Cycle: 224 Converged: 18324
 
- Cycle: 225 Converged: 10722
+ Cycle: 225 Converged: 18306
 
- Cycle: 226 Converged: 10708
+ Cycle: 226 Converged: 18292
 
- Cycle: 227 Converged: 10686
+ Cycle: 227 Converged: 18270
 
- Cycle: 228 Converged: 10666
+ Cycle: 228 Converged: 18250
 
- Cycle: 229 Converged: 10640
+ Cycle: 229 Converged: 18224
 
- Cycle: 230 Converged: 10602
+ Cycle: 230 Converged: 18186
 
- Cycle: 231 Converged: 8111
+ Cycle: 231 Converged: 13799
 
- Cycle: 232 Converged: 8079
+ Cycle: 232 Converged: 13767
 
- Cycle: 233 Converged: 8055
+ Cycle: 233 Converged: 13743
 
- Cycle: 234 Converged: 8017
+ Cycle: 234 Converged: 13705
 
- Cycle: 235 Converged: 5564
+ Cycle: 235 Converged: 9356
 
- Cycle: 236 Converged: 5518
+ Cycle: 236 Converged: 9310
 
- Cycle: 237 Converged: 5486
+ Cycle: 237 Converged: 9278
 
- Cycle: 238 Converged: 5464
+ Cycle: 238 Converged: 9256
 
- Cycle: 239 Converged: 5432
+ Cycle: 239 Converged: 9224
 
- Cycle: 240 Converged: 2957
+ Cycle: 240 Converged: 4853
 
- Cycle: 241 Converged: 2915
+ Cycle: 241 Converged: 4811
 
  Cycle: 242 Converged: 458
 
@@ -718,5 +718,5 @@
  Cycle: 359 Converged: 2
 
  Cycle: 360 Converged: 0
-Total running time: 140.316 seconds
+Total running time: 4.2123 seconds
 Iterations: 360
