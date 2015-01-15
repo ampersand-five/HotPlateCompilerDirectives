@@ -1,6 +1,7 @@
 #include <vector>
 #include <array>
 //#include <iostream>
+#include <string>
 #include <chrono>
 #include <fstream>
 #include <math.h>

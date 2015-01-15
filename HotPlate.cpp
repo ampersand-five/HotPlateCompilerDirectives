@@ -6,7 +6,7 @@
 #include <fstream>
 #include <algorithm>
 
-#define PLATE_SIZE 1024
+#define PLATE_SIZE 4096
 #define NEUTRAL_TEMP 50
 
 using std::array;
@@ -19,7 +19,7 @@ int main()
 	array<array<double, PLATE_SIZE>, PLATE_SIZE> current_plate;
 	//auto *prev = &previous_plate;
 	//auto *curr = &current_plate;
-	
+
 
 	std::string file = "hotPlateFinished" + std::to_string((int)PLATE_SIZE) + ".txt";
 	std::ofstream file_out(file, std::ofstream::out);
@@ -65,10 +65,10 @@ int main()
 	//file_out << "Initialize time: " << init_time.count() << " seconds\n";
 
 	//Start iterating
-		//Start time
+	//Start time
 	auto start_time = std::chrono::high_resolution_clock::now();
 
-		//Run
+	//Run
 	int converged = 0;
 	int cycles = 0;
 	do
@@ -80,7 +80,7 @@ int main()
 			for (int j = 1; j < PLATE_SIZE - 1; ++j)
 			{
 				//new temperature
-					//Skip fixed points
+				//Skip fixed points
 				if ((i == 400 && j < 331) || (i == 200 && j == 500))
 				{
 					//file_out << previous_plate[i][j] << " ";
@@ -120,8 +120,8 @@ int main()
 
 		++cycles;
 		//file_out << "\n"; //debug
-		file_out << "\n Cycle: " << cycles << " Converged: " << converged << "\n";
-		std::cout << "\n Cycle: " << cycles << " Converged: " << converged << "\n";
+		//file_out << "\n Cycle: " << cycles << " Converged: " << converged << "\n";
+		//std::cout << "\n Cycle: " << cycles << " Converged: " << converged << "\n";
 
 	} while (converged > 0);
 

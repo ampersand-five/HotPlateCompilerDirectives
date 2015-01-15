@@ -1,2 +1,2 @@
-Total running time: 58.0648 seconds
+Total running time: 96.7046 seconds
 Iterations: 360
