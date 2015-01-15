@@ -6,7 +6,7 @@
 #include <fstream>
 #include <algorithm>
 
-#define PLATE_SIZE 1024
+#define PLATE_SIZE 550
 #define NEUTRAL_TEMP 50
 
 using std::array;
@@ -15,10 +15,11 @@ using std::array;
 int main()
 {
 	//vectors one initialized to having all 50's
-	array<array<double, PLATE_SIZE>, PLATE_SIZE> previous_plate;
-	array<array<double, PLATE_SIZE>, PLATE_SIZE> current_plate;
-	//auto *prev = &previous_plate;
-	//auto *curr = &current_plate;
+	//vector<vector<double>> previous_plate (PLATE_SIZE, vector<double>(PLATE_SIZE, NEUTRAL_TEMP));
+	double previous_plate [PLATE_SIZE][PLATE_SIZE];
+	double current_plate [PLATE_SIZE][PLATE_SIZE];
+	auto *prev = previous_plate;
+	auto *curr = current_plate;
 	
 
 	std::string file = "hotPlateFinished" + std::to_string((int)PLATE_SIZE) + ".txt";
@@ -31,33 +32,28 @@ int main()
 	//Make them all have 50
 	for (int i = 0; i < PLATE_SIZE; ++i)
 	{
-		for (int j = 0; j < PLATE_SIZE; ++j)
-		{
-			previous_plate[i][j] = NEUTRAL_TEMP;
-		}
+		std::fill_n(previous_plate[i], PLATE_SIZE, NEUTRAL_TEMP);
 	}
-	//bottom row get's 100 degrees
-	for (int i = 0; i < PLATE_SIZE; ++i)
-	{
-		previous_plate[PLATE_SIZE - 1][i] = 100;
-	}
-	//mid section (400,0-330) gets 100 degrees
-	for (int i = 0; i < 331; ++i)
-	{
-		previous_plate[400][i] = 100;
-	}
-	//single point gets 100 degrees
+		//bottom row get's 100 degrees
+	std::fill_n(previous_plate[PLATE_SIZE-1], PLATE_SIZE, 100);
+
+		//mid section (400,0-330) gets 100 degrees
+	std::fill_n(previous_plate[400], 330, 100);
+	
+		//single point gets 100 degrees
 	previous_plate[200][500] = 100;
-	//Top & side bars get 0 degrees
+		//Side bars get 0 degrees
 	for (int i = 0; i < PLATE_SIZE; ++i)
 	{
-		previous_plate[0][i] = 0; //top bar
 		previous_plate[i][0] = 0; //left bar
-		previous_plate[i][PLATE_SIZE - 1] = 0; //right bar
+		previous_plate[i][PLATE_SIZE-1] = 0; //right bar
 	}
+		//Top bar get's 0
+	std::fill_n(previous_plate[0], PLATE_SIZE, 0);
+
 
 	//Set current_plate to also have the same setup
-	current_plate = previous_plate;
+	std::copy(previous_plate, previous_plate+PLATE_SIZE*PLATE_SIZE, current_plate);
 
 	//auto initalize_end_time = std::chrono::high_resolution_clock::now();
 
@@ -112,11 +108,9 @@ int main()
 		}
 
 		//Swap
-		//auto *swap = prev;
-		//prev = curr;
-		//curr = swap;
-
-		previous_plate = current_plate;
+		auto *swap = prev;
+		prev = curr;
+		curr = swap;
 
 		++cycles;
 		//file_out << "\n"; //debug
