@@ -15,10 +15,11 @@ using std::array;
 int main()
 {
 	//vectors one initialized to having all 50's
-	array<array<double, PLATE_SIZE>, PLATE_SIZE> previous_plate;
-	array<array<double, PLATE_SIZE>, PLATE_SIZE> current_plate;
-	//auto *prev = &previous_plate;
-	//auto *curr = &current_plate;
+	//vector<vector<double>> previous_plate (PLATE_SIZE, vector<double>(PLATE_SIZE, NEUTRAL_TEMP));
+	double previous_plate[PLATE_SIZE][PLATE_SIZE];
+	double current_plate[PLATE_SIZE][PLATE_SIZE];
+	auto *prev = previous_plate;
+	auto *curr = current_plate;
 
 
 	std::string file = "hotPlateFinished" + std::to_string((int)PLATE_SIZE) + ".txt";
@@ -57,7 +58,13 @@ int main()
 	}
 
 	//Set current_plate to also have the same setup
-	current_plate = previous_plate;
+	for (int i = 0; i < PLATE_SIZE; ++i)
+	{
+		for (int j = 0; j < PLATE_SIZE; ++j)
+		{
+			current_plate[i][j] = previous_plate[i][j];
+		}
+	}
 
 	//auto initalize_end_time = std::chrono::high_resolution_clock::now();
 
@@ -97,11 +104,11 @@ int main()
 					//png_out << (int)new_val << " ";
 
 
-					current_plate[i][j] = (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
-						previous_plate[i][j + 1] + previous_plate[i][j - 1] + 4 * previous_plate[i][j]) / 8;
+					curr[i][j] = (prev[i + 1][j] + prev[i - 1][j] +
+						prev[i][j + 1] + prev[i][j - 1] + 4 * prev[i][j]) / 8;
 					//steady state check
-					if (fabs(previous_plate[i][j] - (previous_plate[i + 1][j] + previous_plate[i - 1][j] +
-						previous_plate[i][j + 1] + previous_plate[i][j - 1]) / 4) > 0.1)
+					if (fabs(prev[i][j] - (prev[i + 1][j] + prev[i - 1][j] +
+						prev[i][j + 1] + prev[i][j - 1]) / 4) > 0.1)
 					{
 						++converged;
 					}
@@ -112,11 +119,9 @@ int main()
 		}
 
 		//Swap
-		//auto *swap = prev;
-		//prev = curr;
-		//curr = swap;
-
-		previous_plate = current_plate;
+		auto *swap = prev;
+		prev = curr;
+		curr = swap;
 
 		++cycles;
 		//file_out << "\n"; //debug
