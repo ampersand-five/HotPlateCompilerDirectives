@@ -5,6 +5,9 @@
 #include <chrono>
 #include <fstream>
 #include <algorithm>
+#include <math.h>
+#include <sys/resource.h>
+#include <omp.h>
 
 #define PLATE_SIZE 4096
 #define NEUTRAL_TEMP 50
@@ -14,15 +17,21 @@ using std::array;
 
 int main()
 {
+
 	//vectors one initialized to having all 50's
 	//vector<vector<double>> previous_plate (PLATE_SIZE, vector<double>(PLATE_SIZE, NEUTRAL_TEMP));
-	double previous_plate[PLATE_SIZE][PLATE_SIZE];
-	double current_plate[PLATE_SIZE][PLATE_SIZE];
+	double** previous_plate = new double* [PLATE_SIZE];
+	double** current_plate = new double* [PLATE_SIZE];
 	auto *prev = previous_plate;
 	auto *curr = current_plate;
 
+	for(int r = 0; r < PLATE_SIZE; ++r)
+	{
+		previous_plate[r] = new double [PLATE_SIZE];
+		current_plate[r] = new double [PLATE_SIZE];
+	}
 
-	std::string file = "hotPlateFinished" + std::to_string((int)PLATE_SIZE) + ".txt";
+	std::string file = "hotPlateFinished.txt";
 	std::ofstream file_out(file, std::ofstream::out);
 	//std::ofstream png_out("hotPlateFinished.png", std::ofstream::out);
 	//png_out << "137 80 78 71 13 10 26 10 ";
@@ -82,6 +91,7 @@ int main()
 	{
 		converged = 0;
 		//Determine new plate
+		#pragma omp parallel for
 		for (int i = 1; i < PLATE_SIZE - 1; ++i)
 		{
 			for (int j = 1; j < PLATE_SIZE - 1; ++j)
@@ -137,4 +147,17 @@ int main()
 	auto time_span = std::chrono::duration_cast<std::chrono::duration<double>>(end_time - start_time);
 	file_out << "Total running time: " << time_span.count() << " seconds\n";
 	file_out << "Iterations: " << cycles;
+
+/*	for(int r = 0, r < PLATE_SIZE; ++r)
+	{
+		for(int c = 0; c < PLATE_SIZE; ++c)
+		{
+			delete previous_plate[r][c];
+		}
+		delete[] previous_plate[r];
+		delete previous_plate[i];
+	}
+	delete[] previous_plate;
+	delete[] current_plate;
+	*/
 }
